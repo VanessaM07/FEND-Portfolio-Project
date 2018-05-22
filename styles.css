@@ -1,0 +1,196 @@
+* {
+  /* Makes width and height include padding, border */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2d3c49;
+  text-transform: uppercase;
+}
+
+/* Header */
+
+h1 {
+  font-weight: 200;
+  font-size: 2.6em;
+  margin-bottom: 0;
+}
+
+header h4 {
+  margin-top: 7px;
+}
+
+/* Top content */
+header {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 1em;
+  /* Vertically centers logo  */
+  align-items: center;
+}
+
+/* logo img */
+.logo {
+  height: 90px;
+  width: auto;
+  margin-right: auto;
+}
+
+
+.header-text {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Divider line/top image */
+
+hr {
+  background-color: #ffcccc;
+  max-width: 1000px;
+  margin-bottom: 1em;
+  border: none;
+  height: 3px;
+}
+
+.main-image {
+  max-width: 1000px;
+  height: auto;
+  margin-bottom: 1.5em;
+}
+
+/* Applies to content within <main> element (excludes header, footer) */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Projects section */
+
+.projects-header {
+  width: 100%;
+  text-align: left;
+  color: #7d97ad;
+}
+
+.container-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+/* Div containing single project's title, image, text */
+.project {
+  width: 300px;
+  height: auto;
+}
+
+.project p, h3 {
+  text-align: center;
+}
+
+
+.project-image {
+  width: 300px;
+  height: auto;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin-top: 1em;
+  background-color: #ffcccc;
+  color: #fff;
+  padding: 1em;
+  font-size: 1em;
+}
+
+
+/* Small laptops */
+@media screen and (max-width: 1199px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+  font-size: 1.3em;
+  }
+
+  h3 {
+  font-size: 1.1em;
+  }
+
+  h4 {
+    font-size: 0.8em;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+
+  header {
+    margin: 0 1.5em 0 0.5em;
+  }
+
+  header, .container, footer {
+    max-width: 100%;
+  }
+
+
+  .container img {
+    max-width: 100%;
+  }
+
+  
+  .container-projects {
+    /* Originally margin: 2em 0 */
+    margin: 1.5em 0 0 0;
+  }
+
+  /* Aligns portfolio header text flush left of portfolio rows */
+  .projects-header {
+    /* Increased width by 20px */
+    width: 320px;
+    margin: 10px auto 0 auto;
+  }
+
+  .project {
+    width: 320px;
+    height: auto;
+    
+    margin: 0 auto 1.2em;
+  }
+
+  .project-image {
+    width: 320px;
+    height: auto;
+  }
+}
